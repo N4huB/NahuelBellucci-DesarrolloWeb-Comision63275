@@ -60,21 +60,69 @@ a{
 /* --------------------- MAIN ---------------------- */
 #main{
     grid-area: main;
-    background-color: rgb(255, 255, 255);
-    position: relative;
+    background-color: rgb(230, 230, 230);
 }
-.mbg-a{
-    position: absolute;
-    width: 100%;
-    height: 250px;
+/* -------------------INICIO--------------------- */
+.container-imain{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
 }
-.mbg-b{
-    position: absolute;
-    transform: scaleY(-1);
-    top: 250px;
-    width: 100%;
-    height: 250px;
+.logo-inicio{
+    width: 450px;
+    height: 450px;
 }
+/* -------------------SERVICIOS--------------------- */
+.container-smain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.container-smain h2 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.service-item:hover {
+    background-color: #191d55;
+    color: white;
+    border-color: #bbb;
+}
+/* -------------------TRABAJOS--------------------- */
+.container-tmain{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.img-trabajo{
+    width: 200px;
+    height: 200px;
+}
+/* -----------------QUIENES SOMOS------------------- */
+/* -------------------CONTACTO--------------------- */
 /* ------------------------------------------------- */
 
 /* -------------------- FOOTER --------------------- */
@@ -257,6 +305,13 @@ a{
         flex-direction: row;
         gap: 15px;
     }
+    .container-imain{
+        padding-top: 50px;
+    }
+    .logo-inicio{
+        width: 350px;
+        height: 400px;
+    }
     #footer .grid-footer{
         display: grid;
         grid-template-areas: 
@@ -349,6 +404,31 @@ a{
         flex-direction: row;
         gap: 15px;
     }
+    .container-imain{
+        padding-top: 35px;
+    }
+    .logo-inicio{
+        width: 350px;
+        height: 400px;
+    }
+    .container-smain {
+        padding-top: 20px;
+    }
+    .container-smain h2 {
+        font-size: 20px;
+    }
+    
+    .services-list {
+        flex-direction: column;
+        
+    }
+    .service-item {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
 }
 
 @media (min-width:481px) and (max-width:600px){
@@ -368,10 +448,60 @@ a{
         flex-direction: row;
         gap: 15px;
     }
+    .container-imain{
+        padding-top: 70px;
+    }
+    .logo-inicio{
+        width: 300px;
+        height: 350px;
+    }
+    .container-smain {
+        padding-top: 20px;
+    }
+    .container-smain h2 {
+        font-size: 20px;
+    }
+    
+    .services-list {
+        flex-direction: column;
+        
+    }
+    .service-item {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 17px;
+    }
 }
 
 @media (min-width:320px) and (max-width:480px){
     .grind-container{
         grid-template-columns: 1fr;
+    }
+    .container-imain{
+        padding-top: 100px;
+    }
+    .logo-inicio{
+        width: 250px;
+        height: 300px;
+    }
+    .container-smain {
+        padding-top: 20px;
+    }
+    .container-smain h2 {
+        font-size: 15px;
+    }
+    
+    .services-list {
+        flex-direction: column;
+        
+    }
+    .service-item {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 15px;
     }
 }
