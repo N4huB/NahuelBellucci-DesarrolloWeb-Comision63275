@@ -1,0 +1,377 @@
+/* -------------------- GENERAL -------------------- */
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.grind-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr; 
+    grid-template-rows: 200px 500px 345px;
+}
+.grid-footer{
+    display: grid;
+    grid-template-areas: 
+    "opciones"
+    "mapa"
+    "redes"
+    "empresas"
+    "derechos-reservados";
+    grid-template-rows: 20px 120px 50px 120px 25px;
+}
+/* ------------------------------------------------- */
+
+/* -------------------- HEADER --------------------- */
+#header{
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 0;
+}
+.hlogo{
+    width: 170px;
+    height: 90px;
+}
+.hopciones{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 30px;
+}
+.hopciones a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+/* ------------------------------------------------- */
+
+/* --------------------- MAIN ---------------------- */
+#main{
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.mbg-a{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+}
+.mbg-b{
+    position: absolute;
+    transform: scaleY(-1);
+    top: 250px;
+    width: 100%;
+    height: 250px;
+}
+/* ------------------------------------------------- */
+
+/* -------------------- FOOTER --------------------- */
+#footer{
+    grid-area: footer;
+    background-color: rgb(24, 24, 24);
+}
+.fopciones{
+    grid-area: opciones;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.fopciones a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+.fmapa{
+    grid-area: mapa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}   
+.fredes{
+    grid-area: redes;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.txtredes, .iconredes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+.fempresas{
+    grid-area: empresas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.txtempresas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+}
+.logoempresas{
+    width: 50px;
+    height: 50px;
+}
+.fdr{
+    grid-area: derechos-reservados;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.txtdr{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6px;
+    color: white;
+}
+/* ------------------------------------------------- */
+
+/* ---------------- MEDIA QUERIES ------------------ */
+
+@media (min-width:1025px) {
+    .grind-container{
+        grid-template-columns: 1fr;
+    }
+    #header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 15px;
+    }
+    .hlogo{
+        width: 280px;
+        height: 150px;
+    }
+    .hopciones{
+        flex-direction: row;
+        gap: 15px;
+    }
+    #footer .grid-footer{
+        display: grid;
+        grid-template-areas: 
+        "opciones  mapa  redes"
+        "opciones  mapa  empresa"
+        "opciones  derechos-reservados  derechos-reservados";
+        grid-template-columns: 15% 45% 40%;
+        grid-template-rows: 175px 145px 15px;
+    }
+    .fopciones{
+        grid-area: opciones;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+    .fopciones a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+    .fmapa{
+        grid-area: mapa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mapa{
+        width: 500px;
+        height: 210px;
+    }
+    .fredes{
+        grid-area: redes;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;     
+    }
+    .txtredes{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: white;
+    }
+    .iconredes{
+        display: flex;
+        gap: 10px;
+        color: white;
+    }
+    .fempresas{
+        grid-area: empresa;
+        display: flex;
+        align-content: center;
+    }
+    .txtempresas{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: white;
+    }
+    .logoempresas{
+        width: 50px;
+        height: 50px;
+    }
+    .fdr{
+        grid-area: derechos-reservados;
+        display: flex;
+        padding-right: 110px;
+    }
+    .txtdr{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 7px;
+        color: white;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .grind-container{
+        grid-template-columns: 1fr;
+    }
+    #header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 15px;
+    }
+    .hlogo{
+        width: 280px;
+        height: 150px;
+    }
+    .hopciones{
+        flex-direction: row;
+        gap: 15px;
+    }
+    #footer .grid-footer{
+        display: grid;
+        grid-template-areas: 
+        "opciones  mapa  redes"
+        "opciones  mapa  empresa"
+        "opciones  derechos-reservados  derechos-reservados";
+        grid-template-columns: 15% 45% 40%;
+        grid-template-rows: 175px 145px 15px;
+    }
+    .fopciones{
+        grid-area: opciones;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+    .fopciones a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+    .fmapa{
+        grid-area: mapa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mapa{
+        width: 420px;
+        height: 200px;
+    }
+    .fredes{
+        grid-area: redes;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        gap: 10px;
+    }
+    .txtredes{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: white;
+    }
+    .iconredes{
+        display: flex;
+        gap: 10px;
+        color: white;
+    }
+    .fempresas{
+        grid-area: empresa;
+        display: flex;
+        align-content: center;
+    }
+    .txtempresas{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: white;
+    }
+    .logoempresas{
+        width: 50px;
+        height: 50px;
+    }
+    .fdr{
+        grid-area: derechos-reservados;
+        display: flex;
+        padding-right: 110px;
+    }
+    .txtdr{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 7px;
+        color: white;
+    }
+}
+
+@media (min-width:601px) and (max-width:768px){
+    .grind-container{
+        grid-template-columns: 1fr;
+    }
+    #header{
+        justify-content: center;
+        gap: 20px;
+    }
+    .hlogo{
+        width: 200px;
+        height: 110px;
+    }
+    .hopciones{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+@media (min-width:481px) and (max-width:600px){
+    .grind-container{
+        grid-template-columns: 1fr;
+    }
+    #header{
+        justify-content: center;
+        gap: 20px;
+    }
+    .hlogo{
+        width: 200px;
+        height: 110px;
+    }
+    .hopciones{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .grind-container{
+        grid-template-columns: 1fr;
+    }
+}
