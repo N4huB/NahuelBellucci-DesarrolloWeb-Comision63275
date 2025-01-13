@@ -69,7 +69,7 @@ a {
 /* --------------------- MAIN ---------------------- */
 #main {
     grid-area: main;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(60, 78, 115);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,6 +102,7 @@ a {
 .container-smain h2 {
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
     font-size: 35px;
 }
 .services-list {
@@ -139,6 +140,7 @@ a {
     align-content: center;
     padding: 40px 50px;
     margin: 100px;
+    background-color: #fff;
     border: 5px solid black;
 }
 .txt-qs{
@@ -581,9 +583,7 @@ a {
 }
 
 @media (min-width:320px) and (max-width:480px){
-    .hopciones a{
-        font-size: 12px;
-    }
+    
     .grind-container{
         grid-template-columns: 1fr;
     }
@@ -600,7 +600,6 @@ a {
     .container-smain h2 {
         font-size: 20px;
     }
-    
     .services-list {
         flex-direction: column;
         gap: 5px;
