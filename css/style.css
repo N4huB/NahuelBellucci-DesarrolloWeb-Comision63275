@@ -127,15 +127,10 @@ a {
 
 /* -------------------TRABAJOS--------------------- */
 .container-tmain {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    display: flex;
     gap: 20px;
     padding: 20px;
     justify-items: center; 
-}
-.img-trabajo {
-    width: 900px;
-    height: 600px; 
 }
 
 /* -----------------QUIENES SOMOS------------------- */
@@ -283,6 +278,12 @@ a {
         flex-direction: row;
         gap: 15px;
     }
+    .img-trabajo {
+        display: flex;
+        justify-content: center;
+        width: 550px;
+        height: 500px;    
+    }
     #footer .grid-footer{
         display: grid;
         grid-template-areas: 
@@ -388,7 +389,6 @@ a {
     .container-smain h2 {
         font-size: 25px;
     }
-    
     .services-list {
         flex-direction: column;
         gap: 0px;
@@ -400,15 +400,11 @@ a {
         text-align: center;
         font-size: 20px;
     }
-    .container-tmain {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); 
-        gap: 15px; 
-        padding: 40px;
-    }
     .img-trabajo {
-        width: 100%;
-        height: auto;
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 450px;    
     }
     #footer .grid-footer{
         display: grid;
@@ -515,7 +511,6 @@ a {
     .container-smain h2 {
         font-size: 25px;
     }
-    
     .services-list {
         flex-direction: column;
         gap: 0px;
@@ -527,24 +522,11 @@ a {
         text-align: center;
         font-size: 20px;
     }
-    .container-tmain {
-        flex-direction: row;
-        gap: 10px;
-    }
     .img-trabajo {
-        width: 100%;
-        height: auto;
-    }
-    .container-tmain {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 20px; 
-        padding: 40px;
-    }
-    
-    .img-trabajo {
-        width: 100%;   
-        height: auto;      
+        display: flex;
+        justify-content: center;
+        width: 450px;
+        height: 400px;    
     }
 }
 
@@ -590,19 +572,18 @@ a {
         text-align: center;
         font-size: 18px;
     }
-    .container-tmain {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 20px; 
-        padding: 40px;
-    }
     .img-trabajo {
-        width: 100%;   
-        height: auto;      
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 350px;    
     }
 }
 
 @media (min-width:320px) and (max-width:480px){
+    .hopciones a{
+        font-size: 12px;
+    }
     .grind-container{
         grid-template-columns: 1fr;
     }
@@ -631,14 +612,10 @@ a {
         text-align: center;
         font-size: 15px;
     }
-    .container-tmain {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); 
-        gap: 5px; 
-        padding: 40px 50px;
-    }
     .img-trabajo {
-        width: 100%;   
-        height: auto;      
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 250px;    
     }
 }
