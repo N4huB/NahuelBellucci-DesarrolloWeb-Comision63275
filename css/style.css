@@ -55,7 +55,13 @@ a {
 }
 .hopciones a {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
     font-size: 15px;
+}
+.hopciones a:hover {
+    outline: none; 
+    border-bottom: 2px solid #191d55;
+    color: #191d55; 
 }
 
 /* ------------------------------------------------- */
@@ -128,12 +134,71 @@ a {
     justify-items: center; 
 }
 .img-trabajo {
-    max-width: 100%; 
-    height: auto; 
+    width: 900px;
+    height: 600px; 
 }
 
 /* -----------------QUIENES SOMOS------------------- */
+.container-qsmain{
+    display: flex;
+    align-content: center;
+    padding: 40px 50px;
+    margin: 100px;
+    border: 5px solid black;
+}
+.txt-qs{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 25px
+}
 /* -------------------CONTACTO--------------------- */
+.container-cmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 100px 400px;
+    gap: 50px;
+    background-color: rgb(252, 252, 252);
+}
+.txt-titulo{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 25px;
+}
+.container-form{
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+.container-txt{
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(234, 234, 234);
+    border: 2px solid rgb(180, 180, 180);
+}
+.txt-mensaje{
+    resize: none;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: rgb(234, 234, 234);
+    border: 2px solid rgb(180, 180, 180);
+}
+.txt-boton{
+    width: 100px;
+}
+
+.txt-ws{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(180, 180, 180);
+    
+}
 /* ------------------------------------------------- */
 
 /* -------------------- FOOTER --------------------- */
@@ -165,9 +230,9 @@ a {
     justify-content: center;
     gap: 10px;
 }
-.txtredes, .iconredes {
+.txtredes, .iconredes, .footer-h2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     color: white;
 }
 .fempresas {
@@ -176,9 +241,9 @@ a {
     flex-direction: column;
     align-items: center;
 }
-.txtempresas {
+.txtempresas .footer-h2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     color: white;
 }
 .logoempresas {
@@ -191,9 +256,9 @@ a {
     align-items: center;
     justify-content: center;
 }
-.txtdr {
+.txtdr .footer-h2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 6px;
+    font-size: 10px;
     color: white;
 }
 /* ------------------------------------------------- */

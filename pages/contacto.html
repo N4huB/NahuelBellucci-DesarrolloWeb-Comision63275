@@ -22,7 +22,26 @@
                 <a href="">Contacto</a>
             </section>
         </header>
-        <main id="main"></main>
+        <main id="main">
+            <div class="container-cmain">
+                <h2 class="txt-titulo">Comunícate con nosotros</h2>
+                <div>
+                    <form class="container-form" action="procesar_form.php" method="post" enctype="text/plain">
+                        <input class="container-txt" type="text" placeholder="nombre">
+                        <input class="container-txt" type="email" placeholder="correo electronico">
+                        <textarea class="txt-mensaje" id="" placeholder="mensaje"></textarea>
+                        <input class="txt-boton" type="submit" value="Enviar">
+                        <input class="txt-boton" type="reset" value="Reset">
+                    </form>
+                </div>
+                <div class="txt-ws">
+                    <div class="iconws">
+                        <i class="fa-brands fa-square-whatsapp" style="color: #00d696; font-size: 35px;"></i>
+                    </div>
+                    <h2>Escribinos</h2>
+                </div>
+            </div>
+        </main>
         <footer id="footer">
             <div class="grid-footer">
                 <section class="fopciones">
@@ -37,7 +56,7 @@
                 </section>
                 <section class="fredes">
                     <div class="txtredes">
-                        <h2 style="font-weight: normal;">Seguinos</h2>
+                        <h2 class="footer-h2" style="font-weight: normal;">Seguinos</h2>
                     </div>
                     <div class="iconredes">
                         <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
@@ -46,7 +65,7 @@
                 </section>
                 <section class="fempresas">
                     <div class="txtempresas">
-                        <h2 style="font-weight: normal;">Empresas que confiaron</h2>
+                        <h2 class="footer-h2" style="font-weight: normal;">Empresas que confiaron</h2>
                     </div>
                     <div>
                         <img class="logoempresas" src="../images/aberturasspensieri_logo.png" alt="">
@@ -58,7 +77,7 @@
                 </section>
                 <section class="fdr">
                     <div class="txtdr">
-                        <h2 style="font-weight: normal;">Herreria Salerno - Desarrollado por NBellucci</h2>
+                        <h2 class="footer-h2" style="font-weight: normal;">Herreria Salerno - Desarrollado por NBellucci</h2>
                     </div>
                 </section>
             </div>
