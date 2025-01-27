@@ -1,620 +1,617 @@
-/* -------------------- GENERAL -------------------- */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 html, body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 a {
-    color: black;
-    text-decoration: none;
-}
-.grind-container {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px auto 345px;
-}
-.grid-footer {
-    display: grid;
-    grid-template-areas:
-        "opciones"
-        "mapa"
-        "redes"
-        "empresas"
-        "derechos-reservados";
-    grid-template-rows: 20px 120px 50px 120px 25px;
+  color: black;
+  text-decoration: none;
 }
 
-/* ------------------------------------------------- */
-
-
-/* -------------------- HEADER --------------------- */
 #header {
-    grid-area: header;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 5px 0;
+  grid-area: header;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 0;
 }
-.hlogo {
-    width: 170px;
-    height: 90px;
+#header .hlogo {
+  width: 170px;
+  height: 90px;
 }
-.hopciones {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 5px 30px;
+#header .hopciones {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 30px;
 }
-.hopciones a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 15px;
+#header .hopciones a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
 }
-.hopciones a:hover {
-    outline: none; 
-    border-bottom: 2px solid #191d55;
-    color: #191d55; 
+#header .hopciones a:hover {
+  outline: none;
+  border-bottom: 2px solid #152966;
+  color: #152966;
 }
 
-/* ------------------------------------------------- */
-
-/* --------------------- MAIN ---------------------- */
 #main {
-    grid-area: main;
-    background-color: rgb(60, 78, 115);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  grid-area: main;
+  background-color: #152966;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-/* -------------------INICIO--------------------- */
 .container-imain {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.logo-inicio {
+  width: 400px;
+  height: 450px;
+}
+
+.container-smain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+}
+.container-smain .animate__animated {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 10px;
+  list-style-type: none;
+}
+.services-list .service-item {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+.services-list .service-item:hover {
+  background-color: #191d55;
+  color: white;
+  border-color: #bbb;
+}
+
+.container-tmain {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.container-qsmain {
+  display: flex;
+  align-content: center;
+  padding: 40px 50px;
+  margin: 100px;
+  background-color: #fff;
+  border: 5px solid black;
+}
+.container-qsmain .txt-qs {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.container-cmain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  padding: 100px 400px;
+  gap: 50px;
+  background-color: rgb(252, 252, 252);
+}
+.container-cmain .txt-titulo {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 25px;
+}
+.container-cmain .container-form {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+.container-cmain .container-form .container-txt {
+  width: 300px;
+  border-radius: 5px;
+  background-color: rgb(234, 234, 234);
+  border: 2px solid rgb(180, 180, 180);
+}
+.container-cmain .container-form .txt-mensaje {
+  resize: none;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: rgb(234, 234, 234);
+  border: 2px solid rgb(180, 180, 180);
+}
+.container-cmain .container-form .txt-boton {
+  width: 100px;
+}
+.container-cmain .txt-ws {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid rgb(180, 180, 180);
+}
+
+#footer {
+  grid-area: footer;
+  background-color: rgb(24, 24, 24);
+}
+
+.fopciones {
+  grid-area: opciones;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fopciones a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+.fmapa {
+  grid-area: mapa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fredes {
+  grid-area: redes;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.txtredes, .iconredes, .footer-h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.fempresas {
+  grid-area: empresas;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txtempresas .footer-h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.logoempresas {
+  width: 50px;
+  height: 50px;
+}
+
+.fdr {
+  grid-area: derechos-reservados;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txtdr .footer-h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: white;
+}
+
+@media (min-width: 1025px) {
+  .grind-container {
+    grid-template-columns: 1fr;
+  }
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+  }
+  #header .hlogo {
+    width: 280px;
+    height: 150px;
+  }
+  #header .hopciones {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .img-trabajo {
     display: flex;
     justify-content: center;
-    padding-top: 25px;
-}
-.logo-inicio {
-    width: 400px;
-    height: 450px;
-}
-
-/* -------------------SERVICIOS--------------------- */
-.container-smain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    padding: 10px;
-}
-.text-servicios {
-    display: flex;
-    padding: 0 20px;
-}
-.container-smain h2 {
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-size: 35px;
-}
-.services-list {
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-    gap: 10px;
-    list-style-type: none;
-}
-.service-item {
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 22px;
-}
-.service-item:hover {
-    background-color: #191d55;
-    color: white;
-    border-color: #bbb;
-}
-
-/* -------------------TRABAJOS--------------------- */
-.container-tmain {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    justify-items: center; 
-}
-
-/* -----------------QUIENES SOMOS------------------- */
-.container-qsmain{
-    display: flex;
-    align-content: center;
-    padding: 40px 50px;
-    margin: 100px;
-    background-color: #fff;
-    border: 5px solid black;
-}
-.txt-qs{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 25px
-}
-/* -------------------CONTACTO--------------------- */
-.container-cmain{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px;
-    padding: 100px 400px;
-    gap: 50px;
-    background-color: rgb(252, 252, 252);
-}
-.txt-titulo{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 25px;
-}
-.container-form{
-    display: flex;
-    align-items: center;
-    align-content: center; 
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
-}
-.container-txt{
-    width: 300px;
-    border-radius: 5px;
-    background-color: rgb(234, 234, 234);
-    border: 2px solid rgb(180, 180, 180);
-}
-.txt-mensaje{
-    resize: none;
-    width: 300px;
-    height: 200px;
-    border-radius: 5px;
-    background-color: rgb(234, 234, 234);
-    border: 2px solid rgb(180, 180, 180);
-}
-.txt-boton{
-    width: 100px;
-}
-
-.txt-ws{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    border: 2px solid rgb(180, 180, 180);
-    
-}
-/* ------------------------------------------------- */
-
-/* -------------------- FOOTER --------------------- */
-#footer {
-    grid-area: footer;
-    background-color: rgb(24, 24, 24);
-}
-.fopciones {
+    width: 550px;
+    height: 500px;
+  }
+  #footer .grid-footer {
+    display: grid;
+    grid-template-areas: "opciones  mapa  redes" "opciones  mapa  empresa" "opciones  derechos-reservados  derechos-reservados";
+    grid-template-columns: 15% 45% 40%;
+    grid-template-rows: 175px 145px 15px;
+  }
+  .fopciones {
     grid-area: opciones;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.fopciones a {
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+  }
+  .fopciones a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     color: white;
-}
-.fmapa {
+  }
+  .fmapa {
     grid-area: mapa;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.fredes {
+    align-items: center;
+  }
+  .fmapa .mapa {
+    width: 500px;
+    height: 210px;
+  }
+  .fredes {
     grid-area: redes;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-}
-.txtredes, .iconredes, .footer-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: white;
-}
-.fempresas {
-    grid-area: empresas;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.txtempresas .footer-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: white;
-}
-.logoempresas {
-    width: 50px;
-    height: 50px;
-}
-.fdr {
-    grid-area: derechos-reservados;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.txtdr .footer-h2{
+    padding-bottom: 30px;
+  }
+  .fredes .txtredes {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     color: white;
+  }
+  .fredes .iconredes {
+    display: flex;
+    gap: 10px;
+    color: white;
+  }
+  .fempresas {
+    grid-area: empresa;
+    display: flex;
+    align-content: center;
+  }
+  .fempresas .txtempresas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+  }
+  .fempresas .logoempresas {
+    width: 50px;
+    height: 50px;
+  }
+  .fdr {
+    grid-area: derechos-reservados;
+    display: flex;
+    padding-right: 110px;
+  }
+  .fdr .txtdr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7px;
+    color: white;
+  }
+  .container-cmain {
+    padding: 50px 200px;
+  }
 }
-/* ------------------------------------------------- */
-
-/* ---------------- MEDIA QUERIES ------------------ */
-
-@media (min-width:1025px) {
-    .grind-container{
-        grid-template-columns: 1fr;
-    }
-    #header{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 15px;
-    }
-    .hlogo{
-        width: 280px;
-        height: 150px;
-    }
-    .hopciones{
-        flex-direction: row;
-        gap: 15px;
-    }
-    .img-trabajo {
-        display: flex;
-        justify-content: center;
-        width: 550px;
-        height: 500px;    
-    }
-    #footer .grid-footer{
-        display: grid;
-        grid-template-areas: 
-        "opciones  mapa  redes"
-        "opciones  mapa  empresa"
-        "opciones  derechos-reservados  derechos-reservados";
-        grid-template-columns: 15% 45% 40%;
-        grid-template-rows: 175px 145px 15px;
-    }
-    .fopciones{
-        grid-area: opciones;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 35px;
-    }
-    .fopciones a{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        color: white;
-    }
-    .fmapa{
-        grid-area: mapa;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .mapa{
-        width: 500px;
-        height: 210px;
-    }
-    .fredes{
-        grid-area: redes;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 30px;     
-    }
-    .txtredes{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        color: white;
-    }
-    .iconredes{
-        display: flex;
-        gap: 10px;
-        color: white;
-    }
-    .fempresas{
-        grid-area: empresa;
-        display: flex;
-        align-content: center;
-    }
-    .txtempresas{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        color: white;
-    }
-    .logoempresas{
-        width: 50px;
-        height: 50px;
-    }
-    .fdr{
-        grid-area: derechos-reservados;
-        display: flex;
-        padding-right: 110px;
-    }
-    .txtdr{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 7px;
-        color: white;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grind-container {
+    grid-template-columns: 1fr;
+  }
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+  }
+  #header .hlogo {
+    width: 280px;
+    height: 150px;
+  }
+  #header .hopciones {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .container-imain {
+    padding-top: 10px;
+  }
+  .container-imain .logo-inicio {
+    width: 350px;
+    height: 400px;
+  }
+  .container-imain .container-smain {
+    padding-top: 10px;
+  }
+  .container-imain .container-smain h2 {
+    font-size: 25px;
+  }
+  .services-list {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .service-item {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .img-trabajo {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 450px;
+  }
+  #footer .grid-footer {
+    display: grid;
+    grid-template-areas: "opciones  mapa  redes" "opciones  mapa  empresa" "opciones  derechos-reservados  derechos-reservados";
+    grid-template-columns: 15% 45% 40%;
+    grid-template-rows: 175px 145px 15px;
+  }
+  .fopciones {
+    grid-area: opciones;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+  }
+  .fopciones a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+  }
+  .fmapa {
+    grid-area: mapa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fmapa .mapa {
+    width: 420px;
+    height: 200px;
+  }
+  .fredes {
+    grid-area: redes;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    gap: 10px;
+  }
+  .fredes .txtredes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+  }
+  .fredes .iconredes {
+    display: flex;
+    gap: 10px;
+    color: white;
+  }
+  .fempresas {
+    grid-area: empresa;
+    display: flex;
+    align-content: center;
+  }
+  .fempresas .txtempresas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+  }
+  .fempresas .logoempresas {
+    width: 50px;
+    height: 50px;
+  }
+  .fdr {
+    grid-area: derechos-reservados;
+    display: flex;
+    padding-right: 110px;
+  }
+  .fdr .txtdr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7px;
+    color: white;
+  }
+  .container-cmain {
+    padding: 50px 100px;
+  }
+  .txt-titulo {
+    font-size: 20px;
+  }
 }
-
-@media (min-width:769px) and (max-width:1024px){
-    .grind-container{
-        grid-template-columns: 1fr;
-    }
-    #header{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 15px;
-    }
-    .hlogo{
-        width: 280px;
-        height: 150px;
-    }
-    .hopciones{
-        flex-direction: row;
-        gap: 15px;
-    }
-    .container-imain{
-        padding-top: 10px;
-    }
-    .logo-inicio{
-        width: 350px;
-        height: 400px;
-    }
-    .container-smain {
-        padding-top:  10px;
-    }
-    .container-smain h2 {
-        font-size: 25px;
-    }
-    .services-list {
-        flex-direction: column;
-        gap: 0px;
-    }
-    .service-item {
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 20px;
-    }
-    .img-trabajo {
-        display: flex;
-        justify-content: center;
-        width: 500px;
-        height: 450px;    
-    }
-    #footer .grid-footer{
-        display: grid;
-        grid-template-areas: 
-        "opciones  mapa  redes"
-        "opciones  mapa  empresa"
-        "opciones  derechos-reservados  derechos-reservados";
-        grid-template-columns: 15% 45% 40%;
-        grid-template-rows: 175px 145px 15px;
-    }
-    .fopciones{
-        grid-area: opciones;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 35px;
-    }
-    .fopciones a{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        color: white;
-    }
-    .fmapa{
-        grid-area: mapa;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .mapa{
-        width: 420px;
-        height: 200px;
-    }
-    .fredes{
-        grid-area: redes;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 30px;
-        gap: 10px;
-    }
-    .txtredes{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        color: white;
-    }
-    .iconredes{
-        display: flex;
-        gap: 10px;
-        color: white;
-    }
-    .fempresas{
-        grid-area: empresa;
-        display: flex;
-        align-content: center;
-    }
-    .txtempresas{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        color: white;
-    }
-    .logoempresas{
-        width: 50px;
-        height: 50px;
-    }
-    .fdr{
-        grid-area: derechos-reservados;
-        display: flex;
-        padding-right: 110px;
-    }
-    .txtdr{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 7px;
-        color: white;
-    }
+@media (min-width: 601px) and (max-width: 768px) {
+  .grind-container {
+    grid-template-columns: 1fr;
+  }
+  #header {
+    justify-content: center;
+    gap: 20px;
+  }
+  .hlogo {
+    width: 200px;
+    height: 110px;
+  }
+  .hopciones {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .container-imain {
+    padding-top: 35px;
+  }
+  .logo-inicio {
+    width: 350px;
+    height: 400px;
+  }
+  .container-imain {
+    padding-top: 10px;
+  }
+  .container-smain h2 {
+    font-size: 25px;
+  }
+  .services-list {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .service-item {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .img-trabajo {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: 400px;
+  }
+  .container-cmain {
+    padding: 50px 50px;
+  }
+  .txt-titulo {
+    font-size: 18px;
+  }
 }
-
-@media (min-width:601px) and (max-width:768px){
-    .grind-container{
-        grid-template-columns: 1fr;
-    }
-    #header{
-        justify-content: center;
-        gap: 20px;
-    }
-    .hlogo{
-        width: 200px;
-        height: 110px;
-    }
-    .hopciones{
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-    .container-imain{
-        padding-top: 35px;
-    }
-    .logo-inicio{
-        width: 350px;
-        height: 400px;
-    }
-    .container-imain{
-        padding-top: 10px;
-    }
-    .container-smain h2 {
-        font-size: 25px;
-    }
-    .services-list {
-        flex-direction: column;
-        gap: 0px;
-    }
-    .service-item {
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 20px;
-    }
-    .img-trabajo {
-        display: flex;
-        justify-content: center;
-        width: 450px;
-        height: 400px;    
-    }
+@media (min-width: 481px) and (max-width: 600px) {
+  .grind-container {
+    grid-template-columns: 1fr;
+  }
+  #header {
+    justify-content: center;
+    gap: 20px;
+  }
+  .hlogo {
+    width: 200px;
+    height: 110px;
+  }
+  .hopciones {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .container-imain {
+    padding-top: 10px;
+  }
+  .logo-inicio {
+    width: 300px;
+    height: 350px;
+  }
+  .container-smain {
+    padding-top: 10px;
+  }
+  .container-smain h2 {
+    font-size: 22px;
+  }
+  .services-list {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .service-item {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .img-trabajo {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 350px;
+  }
+  .container-cmain {
+    padding: 30px 20px;
+  }
+  .txt-titulo {
+    font-size: 16px;
+  }
 }
-
-@media (min-width:481px) and (max-width:600px){
-    .grind-container{
-        grid-template-columns: 1fr;
-    }
-    #header{
-        justify-content: center;
-        gap: 20px;
-    }
-    .hlogo{
-        width: 200px;
-        height: 110px;
-    }
-    .hopciones{
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-    .container-imain{
-        padding-top: 10px;
-    }
-    .logo-inicio{
-        width: 300px;
-        height: 350px;
-    }
-    .container-smain {
-        padding-top: 10px;
-    }
-    .container-smain h2 {
-        font-size: 22px;
-    }
-    
-    .services-list {
-        flex-direction: column;
-        gap: 0px;
-    }
-    .service-item {
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 18px;
-    }
-    .img-trabajo {
-        display: flex;
-        justify-content: center;
-        width: 400px;
-        height: 350px;    
-    }
+@media (min-width: 320px) and (max-width: 480px) {
+  .grind-container {
+    grid-template-columns: 1fr;
+  }
+  .container-imain {
+    padding-top: 10px;
+  }
+  .logo-inicio {
+    width: 250px;
+    height: 300px;
+  }
+  .container-smain {
+    padding-top: 10px;
+  }
+  .container-smain h2 {
+    font-size: 20px;
+  }
+  .services-list {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .service-item {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .img-trabajo {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+  }
+  .container-cmain {
+    padding: 20px 10px;
+  }
+  .txt-titulo {
+    font-size: 14px;
+  }
+  .container-form {
+    width: 90%;
+  }
+  .txt-boton {
+    width: 60px;
+  }
+  .txt-ws {
+    width: 90%;
+  }
 }
 
-@media (min-width:320px) and (max-width:480px){
-    
-    .grind-container{
-        grid-template-columns: 1fr;
-    }
-    .container-imain{
-        padding-top: 10px;
-    }
-    .logo-inicio{
-        width: 250px;
-        height: 300px;
-    }
-    .container-smain {
-        padding-top: 10px;
-    }
-    .container-smain h2 {
-        font-size: 20px;
-    }
-    .services-list {
-        flex-direction: column;
-        gap: 5px;
-    }
-    .service-item {
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 15px;
-    }
-    .img-trabajo {
-        display: flex;
-        justify-content: center;
-        width: 300px;
-        height: 250px;    
-    }
-}
+/*# sourceMappingURL=style.css.map */

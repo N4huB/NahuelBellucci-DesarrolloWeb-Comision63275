@@ -1,0 +1,55 @@
+@media (min-width:481px) and (max-width:600px){
+    .grind-container{
+        grid-template-columns: 1fr;
+    }
+    #header{
+        justify-content: center;
+        gap: 20px;
+    }
+    .hlogo{
+        width: 200px;
+        height: 110px;
+    }
+    .hopciones{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .container-imain{
+        padding-top: 10px;
+    }
+    .logo-inicio{
+        width: 300px;
+        height: 350px;
+    }
+    .container-smain {
+        padding-top: 10px;
+    }
+    .container-smain h2 {
+        font-size: 22px;
+    }
+    
+    .services-list {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .service-item {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .img-trabajo {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 350px;    
+    }
+    .container-cmain{
+        padding: 30px 20px;
+    }
+    .txt-titulo{
+        font-size: 16px;
+    }
+}

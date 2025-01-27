@@ -1,0 +1,49 @@
+.container-cmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 100px 400px;
+    gap: 50px;
+    background-color: rgb(252, 252, 252);
+    .txt-titulo{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 25px;
+    }
+    .container-form{
+        display: flex;
+        align-items: center;
+        align-content: center; 
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        .container-txt{
+            width: 300px;
+            border-radius: 5px;
+            background-color: rgb(234, 234, 234);
+            border: 2px solid rgb(180, 180, 180);
+        }
+        .txt-mensaje{
+            resize: none;
+            width: 300px;
+            height: 200px;
+            border-radius: 5px;
+            background-color: rgb(234, 234, 234);
+            border: 2px solid rgb(180, 180, 180);
+        }
+        .txt-boton{
+            width: 100px;
+        }
+    }
+    .txt-ws{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        border: 2px solid rgb(180, 180, 180);
+    }
+}
+
+
+

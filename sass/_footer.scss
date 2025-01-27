@@ -1,0 +1,59 @@
+#footer {
+    grid-area: footer;
+    background-color: rgb(24, 24, 24);
+}
+.fopciones {
+    grid-area: opciones;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fopciones a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+.fmapa {
+    grid-area: mapa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fredes {
+    grid-area: redes;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.txtredes, .iconredes, .footer-h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.fempresas {
+    grid-area: empresas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txtempresas .footer-h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.logoempresas {
+    width: 50px;
+    height: 50px;
+}
+.fdr {
+    grid-area: derechos-reservados;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.txtdr .footer-h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+}

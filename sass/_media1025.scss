@@ -1,0 +1,100 @@
+@media (min-width:1025px) {
+    .grind-container{
+        grid-template-columns: 1fr;
+    }
+    #header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 15px;
+        .hlogo{
+            width: 280px;
+            height: 150px;
+        }
+        .hopciones{
+            flex-direction: row;
+            gap: 15px;
+        }
+    }
+    .img-trabajo {
+        display: flex;
+        justify-content: center;
+        width: 550px;
+        height: 500px;    
+    }
+    #footer .grid-footer{
+        display: grid;
+        grid-template-areas: 
+        "opciones  mapa  redes"
+        "opciones  mapa  empresa"
+        "opciones  derechos-reservados  derechos-reservados";
+        grid-template-columns: 15% 45% 40%;
+        grid-template-rows: 175px 145px 15px;
+    }
+    .fopciones{
+        grid-area: opciones;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: white;
+        }
+    }
+    .fmapa{
+        grid-area: mapa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .mapa{
+            width: 500px;
+            height: 210px;
+        }
+    }
+    .fredes{
+        grid-area: redes;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;    
+        .txtredes{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            color: white;
+        }
+        .iconredes{
+            display: flex;
+            gap: 10px;
+            color: white;
+        } 
+    }
+    .fempresas{
+        grid-area: empresa;
+        display: flex;
+        align-content: center;
+        .txtempresas{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            color: white;
+        }
+        .logoempresas{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .fdr{
+        grid-area: derechos-reservados;
+        display: flex;
+        padding-right: 110px;
+        .txtdr{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 7px;
+            color: white;
+        }
+    }
+    .container-cmain{
+        padding: 50px 200px;
+    }
+}
